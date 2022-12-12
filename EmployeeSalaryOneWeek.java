@@ -1,15 +1,18 @@
-//FA2022_EmployeeSalaryOneWeek_Caddell.java
+//EmployeeSalaryOneWeek.java
 
 import java.util.Scanner;
 
-public class FA2022_EmployeeSalaryOneWeek_Caddell 
+public class EmployeeSalaryOneWeek 
 {
+	
+	/** This program demonstrates class inheritance by calculating employee weekly salary. */
+	
 	public static void main(String[] args)
 	{
 		String[] personalInfo = { "SS Number", "Last Name", "First Name", "Phone Number", "Address"};
 		float salaryRate;
 		
-		FA2022_Person person  = null;
+		Person person  = null;
 		Scanner keyboard = new Scanner(System.in);
 		
 		//Read salary information from keyboard
@@ -30,12 +33,14 @@ public class FA2022_EmployeeSalaryOneWeek_Caddell
 		salaryRate = keyboard.nextFloat();
 		
 		//Calculate Annual Salary
-		person = new FA2022_Employee_Caddell(personalInfo[0], personalInfo[1], personalInfo[2], personalInfo[3], personalInfo[4], salaryRate);
+		person = new Employee(personalInfo[0], personalInfo[1], personalInfo[2], personalInfo[3], personalInfo[4], salaryRate);
 		
 		//Display salary information to screen
 		System.out.print("\nFA2022_EmployeeSalaryOneWeek_Caddell.java\n"
 				+ "SALARY OF THE WEEK – CORY CADDELL\n"
 				+ "-----------------------------------------------\n"
 				+ person);
+		
+		keyboard.close();
 	}
 }

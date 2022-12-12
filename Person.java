@@ -1,6 +1,6 @@
-//FA2022_Person.java
+//Person.java
 
-public class FA2022_Person 
+public class Person 
 {
 	protected String SSNumber;
 	protected String lastName;
@@ -8,7 +8,7 @@ public class FA2022_Person
 	protected String phone;
 	protected String address;
 	
-	public FA2022_Person()
+	public Person()
 	{
 		SSNumber = "";
 		lastName = "";
@@ -16,7 +16,7 @@ public class FA2022_Person
 		phone    = "";
 		address  = "";
 	}
-	public FA2022_Person(String num, String last, String first, String phoneN, String addr)
+	public Person(String num, String last, String first, String phoneN, String addr)
 	{
 		SSNumber = num;
 		lastName = last;

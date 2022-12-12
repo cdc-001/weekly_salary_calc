@@ -1,16 +1,16 @@
-//FA2022_Employee_Caddell.java
+//Employee.java
 
 
-public class FA2022_Employee_Caddell extends  FA2022_Person
+public class Employee extends  Person
 {
 	protected float salaryRate;
 	
-	public FA2022_Employee_Caddell()
+	public Employee()
 	{
 		super();
 		salaryRate = 0.0f;
 	}
-	public FA2022_Employee_Caddell(String num, String last, String first, String phoneN, String addr, float sr)
+	public Employee(String num, String last, String first, String phoneN, String addr, float sr)
 	{
 		super(num, last, first, phoneN, addr);
 		salaryRate  = sr;	
